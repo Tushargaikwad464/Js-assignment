@@ -1,0 +1,60 @@
+<!--
+1. Write a javascript program to display the current date and time in following format. 
+    sample o/p= Today is: Tuesday Current time is :10 PM : 30: 38 
+2. WAP to print the content of current window
+3. WAP to get current date= mm/dd/yyyy, dd-mm-yyyy*/-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>Day 2 Assignment</h2>
+
+</head>
+
+<body>
+    <button onclick="window.print()">Print this page</button><br/>
+
+    <p id="date"></p>
+    <!--Date-->
+    <button type="button" onclick="mydate()">Click For Date</button>
+
+    <p id="time"></p>
+    <!--Time-->
+    <button type="button" onclick="mytime()">Click For Time</button>
+
+
+    <script>
+        //For Dates
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+
+        //For times
+        var today = new Date();
+        hr = today.getHours();
+        min = today.getMinutes();
+        sec = today.getSeconds();
+        day = today.getUTCDay();
+
+        function mytime() {
+            today = hr + "-" + min + "-" + sec;
+            document.write("Today is:" + day + ":" + today);
+        }
+
+        //for date function
+        function mydate() {
+            today = mm + '-' + dd + '-' + yyyy;
+            document.write("mm-dd-yyyy\t: " + today);
+
+            today = dd + '-' + mm + '-' + yyyy;
+            document.write("<br/>dd-mm-yyyy\t:" + today);
+        }
+    </script>
+</body>
+
+</html>
