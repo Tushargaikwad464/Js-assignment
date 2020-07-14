@@ -1,0 +1,21 @@
+Var=declarations are globally scoped or function/locally scoped.
+ var greeter = "hey hi";
+    
+    function newFunction() {
+        var hello = "hello";
+    }
+Let= let  is only available for use within that block
+let greeting = "say Hi";
+   let times = 4;
+
+   if (times > 3) {
+        let hello = "say Hello instead";
+        console.log(hello);
+    }
+   console.log(hello) 
+
+Const
+Variables declared with the const maintain constant values.
+
+const greeting = "say Hi";
+    greeting = "say Hello instead";

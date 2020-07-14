@@ -1,0 +1,10 @@
+5 different data type contain value
+string
+number
+boolean
+object
+function
+
+2 data types that cannot contain values
+null
+undefined
