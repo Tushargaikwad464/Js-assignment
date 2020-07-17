@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+
+
+<body>
+    <h1>Today's Assignment _1</h1>
+
+    <ol style="font-size: larger;">
+        <li>Question 1: Take a number from a user and write a function which checks whether the number is even or odd. Assign the result to a variable and log that variable in the console.<br/> Example Input: 23 Output: The number entered is 23 and Number
+            is odd
+        </li>
+    </ol>
+
+
+    <script>
+        console.log("hie");
+
+        let Num = +prompt(`Enter Any Number`);
+        console.log(Num, `${typeof(Num)}`);
+
+        function myfunction() {
+
+            if (Num % 2 == 0) {
+                console.log("The number entered is even");
+            } else {
+                console.log("The number entered is Odd")
+            }
+
+        }
+
+
+        myfunction(Num);
+    </script>
+</body>
+
+</html>
